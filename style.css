@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  height: 100vh;
+  background:black;
+}
+html {
+  font-size: 16px;
+}
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.button-option {
+  background: #0f0e0e;
+  height: 29%;
+  width: 29%;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #83ff00;
+    text-shadow: 0em 0em 5em #83ff00,
+                 0em 0em 3em #83ff00,
+                 0em 0em 2em #83ff00,
+                 1px 1px 5px #83ff00,
+                 0px 0px 10px #83ff00,
+                 0px 0px 25px #83ff00,
+                 0px 0px 45px #83ff00,
+                 2px 1px 0px white,
+                -1px 0px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#restart {
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #0a0027;
+  border: 6px solid #fff6a9;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  transition: .5s;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+}
+#restart:hover {
+  color: black;
+  background-color: #fff6a1;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+
+.popup {
+  background: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+#new-game {
+  font-size: 0.6em;
+  padding: 8px 16px;
+  background-color: #0a0027;
+    border-radius: 0.2em;
+  border: 6px solid #fff6a9;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  transition: .5s;
+}
+#new-game:hover {
+  color: black;
+  background-color: #fff6a1;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.popup.hide {
+  display: none;
+}
+
+#welcome{
+  padding: 40px 20px 30px 20px;
+  margin-top: 30px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    animation: blink 12s infinite;
+  -webkit-animation: blink 5s infinite;
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100%{
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+  
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+  margin: 0;
+}
