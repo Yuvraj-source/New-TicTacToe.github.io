@@ -1,10 +1,10 @@
 # New-TicTacToe.github.io
 
-#Tic Tac Toe Game
+# Tic Tac Toe Game
 
 This project is a classic implementation of the Tic Tac Toe game using HTML, CSS, and JavaScript. It also includes neon text effects and animations to make the game more visually appealing.The neon text effects and animations used in this project were created with the help of resources found on Google.
 
-#Rules of the Game
+# Rules of the Game
 
     The game is played on a 3x3 grid.
     Player 1 starts by placing their symbol (X) in any square on the grid.
